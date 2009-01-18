@@ -24,7 +24,7 @@ class JqueryUiTagLib {
     }
 
     def js = []
-    def css = []
+    def css = ["base/ui.core.css"]
     def jsdir = ''
     switch(mode) {
       case 'min':
@@ -44,6 +44,8 @@ class JqueryUiTagLib {
       js << "${jsdir}ui.${component}${mode}.js"
       css << "${theme}/ui.${component}.css"
     }
+    css << "${theme}/ui.theme.css"
+
     effects.each {component ->
       js << "${jsdir}effects.${component}${mode}.js"
     }
