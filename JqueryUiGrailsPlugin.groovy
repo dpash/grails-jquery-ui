@@ -1,13 +1,13 @@
 class JqueryUiGrailsPlugin {
     def version = 0.1
-    def dependsOn = [:]
+//    def dependsOn = [jquery:"1.0 > *"]
 
-    // TODO Fill in these fields
-    def author = "Your name"
-    def authorEmail = ""
-    def title = "Plugin summary/headline"
+    def author = "Bart Schuller"
+    def authorEmail = "Bart.Schuller@gmail.com"
+    def title = "jQuery UI files and taglib"
     def description = '''\
-Brief description of the plugin.
+Taglibs to make it easy to use jQuery UI in your Grails application.
+Depends on the jquery plugin.
 '''
 
     // URL to the plugin's documentation
