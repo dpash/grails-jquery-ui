@@ -7,7 +7,6 @@ Depends on the jquery plugin.
 </description>
   <documentation>http://grails.org/JqueryUi+Plugin</documentation>
   <resources>
-    <resource>DataSource</resource>
     <resource>JqueryUiTagLib</resource>
   </resources>
 </plugin>

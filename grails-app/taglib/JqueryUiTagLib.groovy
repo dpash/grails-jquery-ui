@@ -1,5 +1,7 @@
+import org.smop.grails.jqueryui.TagException
+
 class JqueryUiTagLib {
-  static namespace = "jqueryui"
+  static namespace = "jqui"
 
   /**
    * Include JavaScript and CSS resources in the head.
@@ -48,13 +50,21 @@ class JqueryUiTagLib {
     
     js.each {file ->
       def src = createLinkTo(dir: "${pluginContextPath}/js", file: file)
-      out << "<script src=\"${src}\"></script>\n"
+      out << """<script src="${src}"></script>\n"""
     }
 
     css.each {file ->
       def href = createLinkTo(dir: "${pluginContextPath}/themes", file: file)
-      out << "<link rel=\"stylesheet\" href=\"${href}\" type=\"text/css\" media=\"screen\" />\n"
+      out << """<link rel="stylesheet" href="${href}" type="text/css" media="screen" />\n"""
     }
+  }
+
+  def datepicker = {attrs ->
+    def selector = attrs.remove('selector')
+    if (!selector) throw new TagException("All jqui components need a selector attribute")
+    def dateformat = attrs.remove('dateformat') ?: 'm/d/y'
+    
+    out << """\$("${selector}").datepicker({ dateFormat: "${dateformat}"});"""
   }
 }
 /*
