@@ -118,3 +118,35 @@ Author
 ******
 The grails plugin was written by Bart Schuller <Bart.Schuller@gmail.com>
 See AUTHORS.txt for the jQuery UI authors.
+
+Please ignore everything below
+******************************
+Github and I differ in our interpretations of the rst syntax. Here I'm trying
+to figure out what works and what doesn't.
+
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
+
++---------+---+
+| Table 2 | 1 |
++---------+---+
+| 4       | 3 |
++---------+---+
+
+:term1: What does term1 mean? It sure
+ is an interesting question.
+
+:term2 longer: another one. Shorter explanation.
+
+term1
+  Term1 starts a dl-list, again
+term2
+  and again.
