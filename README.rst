@@ -30,22 +30,26 @@ Tags
 To be used inside ``<head>``, it loads the appropriate JavaScript and
 CSS files. It is an empty element, which recognizes the following attributes:
 
-:components:
-  comma separated list of ui components to include. Possible values:
-  *accordion, datepicker, dialog, draggable, droppable, progressbar, resizable,
-  selectable, slider, sortable, tabs*
+components
+----------
+comma separated list of ui components to include. Possible values:
+*accordion, datepicker, dialog, draggable, droppable, progressbar, resizable,
+selectable, slider, sortable, tabs*
 
-:effects:
-  comma separated list of effects to include. Possible values:
-  *blind, bounce, clip, drop, explode, fold, highlight, pulsate, scale, shake,
-  slide, transfer*
+effects
+-------
+comma separated list of effects to include. Possible values:
+*blind, bounce, clip, drop, explode, fold, highlight, pulsate, scale, shake,
+slide, transfer*
 
-:mode:
-  javascript packing to use. Can be *min* (default),
-  *packed* or *normal*
+mode
+----
+javascript packing to use. Can be *min* (default),
+*packed* or *normal*
 
-:theme:
-  css theme to use, defaults to *base*
+theme
+-----
+css theme to use, defaults to *base*
 
 ``<jqui:datepicker/>``
 ======================
@@ -53,14 +57,16 @@ To be used inside ``<jq:jquery>``, it attaches a datepicker widget to
 the elements selected by the selector. It currently knows the following
 attributes:
 
-:selector:
-  The jquery `selector <http://docs.jquery.com/Selectors>`_
+selector
+--------
+The jquery `selector <http://docs.jquery.com/Selectors>`_
 
-:dateformat:
-  The `date format <http://docs.jquery.com/UI/Datepicker/%24.datepicker.formatDate>`_
-  to use, which defaults to *m/d/y* because that is the only format which grails
-  can successfully convert from a String to a Date.
-  **note** The jquery-ui date format differs from the Java SimpleDateFormat.
+dateformat
+----------
+The `date format <http://docs.jquery.com/UI/Datepicker/%24.datepicker.formatDate>`_
+to use, which defaults to *m/d/y* because that is the only format which grails
+can successfully convert from a String to a Date.
+**note** The jquery-ui date format differs from the Java SimpleDateFormat.
 
 Roll your own
 =============
@@ -72,14 +78,15 @@ The file to edit is ``grails-app/taglib/JqueryUiTagLib.groovy``
 
 Themes
 ******
-
 The following themes are included:
 
-:base:
-  The default theme, white background with blackish widgets
+**base**
 
-:Cupertino:
-  As downloaded from the gallery at http://ui.jquery.com/themeroller
+The default theme, white background with blackish widgets
+
+**Cupertino**
+
+As downloaded from the gallery at http://ui.jquery.com/themeroller
 
 You can add new themes by using the themeroller, renaming the downloaded
 directory and placing it in ``web-app/themes/`` in this plugin (or in
