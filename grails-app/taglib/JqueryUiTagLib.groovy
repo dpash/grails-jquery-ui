@@ -5,8 +5,8 @@ class JqueryUiTagLib {
 
   /**
    * Include JavaScript and CSS resources in the head.
-   * -- attrs.components = comma delimited list of ui components to include
-   * -- attrs.effects = comma delimited list of effects to include
+   * -- attrs.components = comma separated list of ui components to include
+   * -- attrs.effects = comma separated list of effects to include
    * -- attrs.theme = css theme to use, defaults to 'base'
    * -- attrs.mode = javascript packing to use. Can be 'min' (default),
    *    'packed' or 'normal'

@@ -11,7 +11,7 @@ Depends on the jquery plugin.
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/JqueryUi+Plugin"
+    def documentation = "http://github.com/bartschuller/grails-jquery-ui"
 
     def doWithSpring = {
         // TODO Implement runtime spring config (optional)

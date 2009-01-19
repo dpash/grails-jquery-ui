@@ -5,7 +5,7 @@
   <description>Taglibs to make it easy to use jQuery UI in your Grails application.
 Depends on the jquery plugin.
 </description>
-  <documentation>http://grails.org/JqueryUi+Plugin</documentation>
+  <documentation>http://github.com/bartschuller/grails-jquery-ui</documentation>
   <resources>
     <resource>JqueryUiTagLib</resource>
   </resources>
