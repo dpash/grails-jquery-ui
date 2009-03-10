@@ -1,3 +1,5 @@
 docs/
 .DS_Store
 *.zip
+plugin.xml
+stacktrace.log

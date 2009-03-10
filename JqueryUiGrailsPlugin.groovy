@@ -1,5 +1,5 @@
 class JqueryUiGrailsPlugin {
-    def version = 0.1
+    def version = 0.2
 //    def dependsOn = [jquery:"1.0 > *"]
 
     def author = "Bart Schuller"
