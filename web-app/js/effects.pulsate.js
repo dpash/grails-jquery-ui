@@ -1,7 +1,7 @@
 /*
- * jQuery UI Effects Pulsate 1.6rc5
+ * jQuery UI Effects Pulsate 1.7.2
  *
- * Copyright (c) 2009 AUTHORS.txt (http://ui.jquery.com/about)
+ * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
  * and GPL (GPL-LICENSE.txt) licenses.
  *
@@ -23,7 +23,7 @@ $.effects.pulsate = function(o) {
 		var mode = $.effects.setMode(el, o.options.mode || 'show'); // Set Mode
 		var times = o.options.times || 5; // Default # of times
 		var duration = o.duration ? o.duration / 2 : $.fx.speeds._default / 2;
-		
+
 		// Adjust
 		if (mode == 'hide') times--;
 		if (el.is(':hidden')) { // Show fadeIn
