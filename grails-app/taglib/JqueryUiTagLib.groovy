@@ -51,12 +51,12 @@ class JqueryUiTagLib {
     }
     
     js.each {file ->
-      def src = createLinkTo(dir: "${pluginContextPath}/js", file: file)
+      def src = resourceo(dir: "${pluginContextPath}/js", file: file)
       out << """<script src="${src}"></script>\n"""
     }
 
     css.each {file ->
-      def href = createLinkTo(dir: "${pluginContextPath}/themes", file: file)
+      def href = resource(dir: "${pluginContextPath}/themes", file: file)
       out << """<link rel="stylesheet" href="${href}" type="text/css" media="screen" />\n"""
     }
   }
